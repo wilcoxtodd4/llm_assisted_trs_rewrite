@@ -1,0 +1,23 @@
+Please now act as a data scientist who specializes in machine learning using Python. You also need to be well versed in tennis scores and understand that a 6*0, 6*2 win is a much better win than a 7*5, 6*4 win. We have a table of tennis results in a file singles_matches_clean.csv. They have player IDs for the winner and loser of the matches, and the score of the match in fields set1, set2 and set3. I want you to come up with ratings for all the players in the file. I will compare your results to mine later. You should know that my results have a rating range for players between 5 and 39. I'd like yours to be the same. One other thing to know is that the field "flight" is related to the quality of the player. By rules, the player for a team in flight S1 are supposed to be better than the player in flight S2 for the same team. So, a player who wins all their matches in the S4 is not as good as the player from their own team in flight S1. Write me some code to calculate the ratings. I also want you to display the player names for me - you can use the file girls_players.csv to map the Winner1 and Loser1 fields to the PlayerID field to get the players fullname.
+
+
+There are some matches with blank values for winner1 or loser1. Add some code to exclude those matches at the beginning.
+
+
+
+Alter the code to also show player names in the player_ratings dataframe
+
+
+
+Almost all the players came out without a rating. Any idea why or how to fix it?
+
+
+Let's ignore the players file and ignore all requests to include the names. Rewrite the code so that it rates purely based on the IDs in the winner1 and loser1 fields.
+
+
+
+Please do the something very similar for doubles ratings using the attached doubles_matches_clean.csv file. Again, if any of the players are missing, drop the match before scoring it.
+
+
+
+Now lets display the names with these. For each file of ratings, merge it with the girls_players.csv file I attached earlier. They should merge on playerID, but you may have to check that they are both either numeric or character format. Write code to merge the fullname data field in to the ratings file, then display the top 100 for each.

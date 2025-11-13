@@ -1,0 +1,61 @@
+Lessons Learned:
+While "Third Attempt" below pretty much works, trying to do it all in one prompt and step made the process slow.
+It would have been better if I had broken it up into steps along the way.
+  Along with that, naming files pre1, pre2 instead of going for the final name at the outset would have been wise.
+
+
+
+
+
+First attempt:
+
+Now I need the same thing for players (create a file called players.json, then read it in as specified below and create a file girls_players.csv)
+
+The location of the data is: https://api.v2.tennisreporting.com/players
+
+The fields I need to keep are: id, schoolID, firstname, lastname, grade.
+
+The json format is: { "id": 2, "schoolId": 100031, "firstName": "Macayla", "lastName": "Johnson", "address": null, "email": null, "phone": null, "dateOfBirth": null, "grade": "Graduated", "genderId": 2, "physicalExam": false, "feesPaid": false, "wiaaFormSubmitted": false, "createdAt": "2014-08-18T19:04:57.000Z", "updatedAt": "2025-06-18T18:37:50.000Z", "deletedAt": null, "graduatedDate": "2020-02-11T06:41:48.000Z", "playerParents": [] }
+
+When creating the girls_players.csv file, only include records where schoolID for the player is one of the IDs present in the file schools.csv. Also, only include records where genderId=2 Provide the python code for this.
+
+
+Data Check:
+
+write me some queries in python to check the data quality on girls_players.csv. Write queries to check for all of these things: Are there any duplicates on the ID field from the girls_players? Is there any unexpected (leading or trailing) white space on any of the fields? Are there any characters that are not alphabet on the fields firstname and lastname?
+
+Commentary:  There are lots of things not to like here.  So, it will need to be re-done.  But I also realized that I should have done data quality checks on the schools data, and I also want to rename id on that table to be school_id.
+
+
+
+Third Attempt.
+
+For reference, all files will be stored in the directory I'll call the 'main directory' unless otherwise specified. The main directory is: C:\Users\toddw\Desktop\Python Rating Code and Files\GenAI_Rewrite
+
+1) I need is a piece of python code to do the following:
+a) get information on players from the website: https://api.v2.tennisreporting.com/players
+b) store that json data in a file called players.json
+c) read in the json file and store it in a csv file called girls_players.csv. I only need to keep the fields id, schoolID, firstname, lastname, grade.
+d) when writing the csv, rename id to be playerID
+
+The json format is: { "id": 2, "schoolId": 100031, "firstName": "Macayla", "lastName": "Johnson", "address": null, "email": null, "phone": null, "dateOfBirth": null, "grade": "Graduated", "genderId": 2, "physicalExam": false, "feesPaid": false, "wiaaFormSubmitted": false, "createdAt": "2014-08-18T19:04:57.000Z", "updatedAt": "2025-06-18T18:37:50.000Z", "deletedAt": null, "graduatedDate": "2020-02-11T06:41:48.000Z", "playerParents": [] }
+
+Cleaning some last names:  Some of the records in that json file have lastname values with double quotes around them and end with a comma, like lastname="lastname,".  I want to have that comma removed from the value and the quotes removed as well.
+
+After you have cleaned the last names, create a new field called fullname that is a concatenation of firstname and lastname with a space in between.
+
+When creating the girls_players.csv file, only include records where the following things are true:
+  1) schoolID for the player is one of the schoolIDs present in the file schools.csv.
+  2) Only include records where genderId=2.
+  3) Exclude records where firstname=Default and lastname=Default.
+  4) Exclude records where graduatedDate is not null and graduatedDate is from a year prior to 2025.
+  
+I will also need some data quality checks on the resulting girls_players.csv file:
+  1) Confirm there are no duplicate values for playerID
+  2) Show all the firstname values that have non-alphabetic characters
+  3) Show all the lastname values that have non-alphabetic characters
+  4) Do a check that there aren't any values that will cause utf-8 encoding problems
+  5) Create a frequency report on first name and show the 5 most common first names
+  
+  
+Provide the python code for this.

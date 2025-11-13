@@ -1,0 +1,34 @@
+Original Prompt:
+
+I'm starting a new project. The end result will be several pieces of python code. The early stages will be extracting data from some websites and APIs. The data is stored in json files. We'll need to gather the json code, then read it in and store it in csv files. Let's get started on that now.
+
+For reference, all files will be stored in the directory I'll call the 'main directory' unless otherwise specified. The main directory is: C:\Users\toddw\Desktop\Python Rating Code and Files\GenAI_Rewrite
+
+1) I need is a piece of python code to do the following:
+a) get information on a bunch of schools from the website: https://api.v2.tennisreporting.com/schools
+b) store that json data in a file called schools.json
+c) read in the json file and store it in a csv file called schools.csv. I only need to keep the fields id, name, city name. And I only need it to store records with state abbr = "OR"
+
+The json for each school has the format: { "id": 1, "name": "Lansing Catholic ", "address": null, "zipCode": null, "lowestGrade": "9", "highestGrade": "12", "cityId": 9887, "city": { "id": 9887, "name": "Lansing", "stateId": 30, "state": { "name": "Michigan", "abbr": "MI" } } }
+
+Provide the python code to do this.
+
+
+
+Re-Done Prompt to change some field names and add data quality checks.
+
+I'm starting a new project. The end result will be several pieces of python code. The early stages will be extracting data from some websites and APIs. The data is stored in json files. We'll need to gather the json code, then read it in and store it in csv files. Let's get started on that now.
+
+For reference, all files will be stored in the directory I'll call the 'main directory' unless otherwise specified. The main directory is: C:\Users\toddw\Desktop\Python Rating Code and Files\GenAI_Rewrite
+
+1) I need is a piece of python code to do the following:
+a) get information on a bunch of schools from the website: https://api.v2.tennisreporting.com/schools
+b) store that json data in a file called schools.json
+c) read in the json file and store it in a csv file called schools.csv. I only need to keep the fields id, name, city name. Please make these field alterations as well: Rename the field id to be SchoolID; Rename the field name to be School_Name, and for both the fields school_name and city, apply an upcase function to make all the values fully upper case. And I only need it to store records with state abbr = "OR"
+
+The json for each school has the format: { "id": 1, "name": "Lansing Catholic ", "address": null, "zipCode": null, "lowestGrade": "9", "highestGrade": "12", "cityId": 9887, "city": { "id": 9887, "name": "Lansing", "stateId": 30, "state": { "name": "Michigan", "abbr": "MI" } } }
+
+Provide the python code to do this.
+
+Also write me some queries to do data quality checks. I want to have queries to confirm: There are no duplicates on the field SchoolID There are no leading or trailing spaces for the field values in all three fields.
+

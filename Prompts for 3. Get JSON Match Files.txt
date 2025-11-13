@@ -1,0 +1,27 @@
+This worked well, except that it tried to extract schoolID from the schools.csv instead of SchoolID (capital S).
+And I forgot to specify the sub-folder for the match files, so I had to tweak that.
+
+As a 2nd attempt, I added the requirement to check if the match file has a library called overallRecord, and not download it if it doesn't.
+
+
+Write a piece of python code that connects to many api files to extract json files. The requirements are:
+
+There is a file for each school based on the value of SchoolID in the schools.csv file. If there is no file for a specific school, just skip it and exclude it.
+
+The files can be found at the locations: https://api.v2.tennisreporting.com/report/school/YYY?year=2025&genderId=2 with YYY needing to be replaced by the SchoolID. As in, SchoolID=75237 will have a file at: https://api.v2.tennisreporting.com/report/school/75237?year=2025&genderId=2
+
+You will need to pass login data to the api. The data to send is: 
+{ 'email': 'sherwoodtennistodd@gmail.com', 'password': 'ReplaceMe' }
+
+login data can be posted at: https://api.v2.tennisreporting.com/auth/login
+
+Write python code to extract all these json files using the login information provided. For the script, start with a test run of the first 15 records from schools.csv
+
+
+
+
+
+I also went back and added this - I thought it would be handy to have.
+In the last piece of code, where we downloaded all the json files with data, let's add a piece of code to that.  In addition to downloading them, could you also have it write the downloaded filename to another csv file called schools_with_json_files.csv.
+
+It created a new version with a few tweaks, so I just copied that.

@@ -1,0 +1,93 @@
+Remember this for now. Inside each of the json files I just downloaded, there is information on matches. Each json file will have several matches in it held in "meets". The json format for a typical meet looks like this: "meets": [ { "id": 197883, "title": "Vale v La Grande", "meetDateTime": "2025-05-08T06:00:00.000Z", "postSeason": false, "approveMeet": true, "eventId": null, "winnerSchoolId": null, "coach": { "schoolId": 74596, "firstName": "Randy", "lastName": "Seals", "genderId": 2, "email": "rseals@malesd.org", "phone": "(541) 212-5579", "school": { "name": "Vale" } }, "schools": { "winners": [ { "id": 74596, "name": "Vale", "score": 6, "winnerSchoolId": null } ], "losers": [ { "id": 75227, "name": "LA GRANDE HIGH SCHOOL", "score": 1, "winnerSchoolId": null } ] }, "matches": { "Singles": [ { "sets": [ { "2645435": 6, "2645436": 2, "number": 1, "tie": null }, { "2645435": 6, "2645436": 3, "number": 2, "tie": null } ], "id": 1322751, "flight": "1", "matchType": "Singles", "finish": null, "winnerTeamId": 2645435, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645435, "isWinner": true, "players": [ { "id": 163020, "firstName": "Avery", "lastName": "Schiemer", "grade": "10", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } } ] }, { "id": 2645436, "isWinner": false, "players": [ { "id": 129948, "firstName": "Addison", "lastName": "Berry", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } } ] } ] }, { "sets": [ { "2645477": 6, "2645478": 3, "number": 1, "tie": null }, { "2645477": 6, "2645478": 2, "number": 2, "tie": null } ], "id": 1322772, "flight": "2", "matchType": "Singles", "finish": null, "winnerTeamId": 2645477, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645477, "isWinner": true, "players": [ { "id": 104187, "firstName": "Autumn", "lastName": "Jones", "grade": "Graduated", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": "2025-06-18T18:44:19.000Z", "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } } ] }, { "id": 2645478, "isWinner": false, "players": [ { "id": 124903, "firstName": "Mallie", "lastName": "Gitome", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } } ] } ] }, { "sets": [ { "2645497": 6, "2645498": 7, "number": 1, "tie": 2 }, { "2645497": 7, "2645498": 6, "number": 2, "tie": 5 }, { "2645497": 10, "2645498": 4, "number": 3, "tie": null } ], "id": 1322782, "flight": "3", "matchType": "Singles", "finish": null, "winnerTeamId": 2645497, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645497, "isWinner": true, "players": [ { "id": 121019, "firstName": "Hazel", "lastName": "Mckrola", "grade": "12", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } } ] }, { "id": 2645498, "isWinner": false, "players": [ { "id": 143242, "firstName": "Elle", "lastName": "Edvalson", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } } ] } ] } ], "Doubles": [ { "sets": [ { "2645507": 6, "2645508": 0, "number": 1, "tie": null }, { "2645507": 6, "2645508": 1, "number": 2, "tie": null } ], "id": 1322787, "flight": "1", "matchType": "Doubles", "finish": null, "winnerTeamId": 2645507, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645507, "isWinner": true, "players": [ { "id": 101459, "firstName": "Elise", "lastName": "Seals", "grade": "Graduated", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": "2025-06-18T18:44:19.000Z", "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } }, { "id": 141895, "firstName": "Ellie", "lastName": "Seals", "grade": "11", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 2 } } ] }, { "id": 2645508, "isWinner": false, "players": [ { "id": 129947, "firstName": "LeAnna", "lastName": "Scott", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } }, { "id": 165713, "firstName": "Maddison", "lastName": "Armstrong", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 2 } } ] } ] }, { "sets": [ { "2645523": 6, "2645524": 4, "number": 1, "tie": null }, { "2645523": 6, "2645524": 2, "number": 2, "tie": null } ], "id": 1322795, "flight": "2", "matchType": "Doubles", "finish": null, "winnerTeamId": 2645523, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645523, "isWinner": true, "players": [ { "id": 121018, "firstName": "Megan ", "lastName": "Schoorl", "grade": "12", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 2 } }, { "id": 121022, "firstName": "Ella ", "lastName": "Nieskens", "grade": "12", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } } ] }, { "id": 2645524, "isWinner": false, "players": [ { "id": 143251, "firstName": "Karli", "lastName": "Kretschmer", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } }, { "id": 149968, "firstName": "Irelyn", "lastName": "Collins", "grade": "12", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 2 } } ] } ] }, { "sets": [ { "2645531": 6, "2645532": 0, "number": 1, "tie": null }, { "2645531": 6, "2645532": 1, "number": 2, "tie": null } ], "id": 1322799, "flight": "3", "matchType": "Doubles", "finish": null, "winnerTeamId": 2645531, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645531, "isWinner": true, "players": [ { "id": 121021, "firstName": "Janet", "lastName": "Gonzalez", "grade": "12", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } }, { "id": 163028, "firstName": "Marli", "lastName": "Bennett", "grade": "10", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 2 } } ] }, { "id": 2645532, "isWinner": false, "players": [ { "id": 165718, "firstName": "Ava", "lastName": "Mendoza", "grade": "10", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } }, { "id": 165726, "firstName": "Eve", "lastName": "Grigg", "grade": "10", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 2 } } ] } ] }, { "sets": [ { "2645541": 3, "2645542": 8, "number": 1, "tie": null } ], "id": 1322804, "flight": "4", "matchType": "Doubles", "finish": null, "winnerTeamId": 2645542, "genderId": 2, "isNotVarsity": false, "matchTeams": [ { "id": 2645541, "isWinner": false, "players": [ { "id": 121020, "firstName": "Madison", "lastName": "Baker", "grade": "12", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 2 } }, { "id": 141896, "firstName": "Rachel", "lastName": "Ainsworth", "grade": "11", "genderId": 2, "schoolId": 74596, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "Vale" }, "matchTeamPlayer": { "position": 1 } } ] }, { "id": 2645542, "isWinner": true, "players": [ { "id": 143241, "firstName": "Kendal", "lastName": "DeYoung", "grade": "Graduated", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": "2025-06-18T18:44:19.000Z", "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 2 } }, { "id": 165725, "firstName": "Ellison", "lastName": "Summers", "grade": "10", "genderId": 2, "schoolId": 75227, "updatedAt": "2025-06-18T18:37:50.000Z", "graduatedDate": null, "school": { "name": "LA GRANDE HIGH SCHOOL" }, "matchTeamPlayer": { "position": 1 } } ] } ] } ] }, "event": null } ]
+
+
+
+
+
+Now we need to create a list of all the team matches. The data is in the format you saved for meets.
+
+
+We will need to loop through all the downloaded files.  The list of files is stored in schools_with_json_files.csv, which has a header called filename. 
+
+
+Each meet is made up of many individual matches.  We need to gather data for each of those individual matches.  And it is possible that some of the data is not present in each meet, so error handling of missing data needs to be built as well.
+
+Here are the fields we need to each individual singles match.  This information is all stored in the json format inside "meets".
+1) team_match_id, which comes from "meets"/"id"
+2) match_date, which comes from "meets"/"meetDateTime" - this should be stored as a date field
+3) match_type, which can be "Singles" or "Doubles" based on whether you are pulling from "matches"/"Singles" or "matches"/"Doubles".
+
+These next fields all come from "meets"/"matches"/"Singles" structure
+4) match_flight, which comes from /"flight"
+5) singles_match_id, which comes from /"id"
+6) singles_player0_id_in_match, which comes from /s/"matchTeams"/0/"id"
+7) singles_player0_is_winner, which comes from /s/"matchTeams"/0/"isWinner"
+8) singles_player0_real_id, which comes from /s/"matchTeams"/0/"players"/0/"id"
+9) singles_player1_id_in_match, which comes from /s/"matchTeams"/1/"id"
+10) singles_player1_real_id, which comes from /s/"matchTeams"/1/"players"/0/"id"
+
+Let's test our code there for now. Loop through the first 5 schools in the schools_with_json_files.csv and output the results to singles_matches_raw.csv
+
+
+
+
+
+Let's see how good you are with less specific prompts. I want to add set scores to each of these matches. Matches could be made up of 1, 2 or 3 sets. Each player will have a score in that set. I want the scores written in the format player_0_score*player_1_score. You will need to make sure that each score goes with the correct player. Inside the set data, it uses the value of either singles_player0_id_in_match or singles_player1_id_in_match (but those are numeric fields and you'll need to convert them to strings). So, please add three fields to each record for set1, set2 and set3 (which might be stored as python counting as 0, 1 and 2.
+
+
+
+
+
+
+Now I want a new piece of code to do the extraction of the doubles matches. It will be very similar, except instead of just players 0 and 1, there will be players 0, 1, 2, 3. I want the information for them as well. And these will all be under "Doubles" instead of "Singles". And I want the output file to be called doubles_matches_raw.csv.
+
+
+
+
+
+Back in the code you wrote to create doubles_matches_raw.csv, I got an error when running it. The error is "'NoneType' object is not iterable" and it appears to be associated with the line: rows = extract_doubles_from_meet(meet) Can you fix that?
+
+(also had it fix it for singles)
+
+
+
+
+
+
+
+Our goal for the next step is to clean out the singles_matches_raw.csv file and create a new csv file called singles_matches_cleaner.csv. Here are the changes to make:
+
+Create new fields: flight = concatenate the letter S with the field match_flight to look like S1
+winner1 = if singles_player0_is_winner is TRUE, then singles_player0_real_id, else singles_player1_real_id
+loser1 = if singles_player0_is_winner is FALSE, then singles_player0_real_id, else singles_player1_real_id
+set1=if singles_player0_is_winner is TRUE, then set1_score, else reverse the score (so 3*6 becomes 6*3)
+set2=if singles_player0_is_winner is TRUE, then set2_score, else reverse the score (so 3*6 becomes 6*3)
+set3=if singles_player0_is_winner is TRUE, then set3_score, else reverse the score (so 3*6 becomes 6*3)
+
+Drop the fields: match_type, singles_player0_id_in_match, singles_player1_id_in_match, singles_player0_real_id, singles_player1_real_id, set1_score, set2_score, set3_score, singles_player0_is_winner, match_flight
+
+Also, if set1_score='2*0', drop the record. Or if all three values set1, set2 and set3 are null, drop the record
+
+And, I need to shift set scores to populate set1, set2, set3 in order in places where one with higher priority is blank. For example, if set 1 is blank, but set2 and set3 are populated, shift set2 into set1 and shift set3 into set2. Or if only set3 is populated, move that into set1.
+
+Finally, after doing all the set shifts, if any values for set1, set2 or set3 are blank, replace them 0*0.
+
+Give me code to execute those instructions.
+
+
+
+I uploaded the singles and doubles clean csvs so it can evaluate set scores.
+
+I will need help writing rules to standardize these. For the first attempt, let's make these changes: 1) Let's define total games as the sum of all the games played in all the sets. Games are the numbers in the set scores. So, 6*4, 6*2, 0*0 would be 18 total games. The first thing to clean is removing records where there total games played is under 6. Do this first. 2) Some scores need to be totally reversed. If the last set played (set 3 is after 2, set 2 is after 1) shows a score that has the front part lower than the back part (e.g. 5*7), then the scores of all three sets need to be reversed. So, a score of 6*3 in set1, 4*6 in set2 and 6*7 in set 3 gets turned into 3*6, then 6*4 and 7*6. Do this operation 2nd. 3) If a score has a value between 60 and 67 (as in 61*0), that score will be replaced using the first two bytes as the score for each player. So, 61*0 becomes 6*1. 63*0 becomes 6*3. 4) For set 3, where it has scores of 10 or above, change it to be 1*0 instead. 5) For set scores like 7*0 through 7*5, 8*6, 9*7, change them to be 7*6. Write a piece of code that does the following: 1) Performs these operations on both the singles_cleaner.csv and doubles_cleaner.csv files, creating new versions as singles_cleaner2.csv and doubles_cleaner2.csv. 2) Tracks every change made and stores the before and after values. That storage should include the singles or doubles match_id, the set (set1, set2 or set3) it was performed on, and the before and after values. Store those in singles_score_transformations.csv and doubles_score_transformations.csv. 3) Combines the two score transformation files and prints. a frequency report of set, before and after values.
+
+
+Actually, I don't want you to store the transformations for item 1 (dropping records with low total games) or item 2 (score reversals). I just want them for items 3/4/5 from the first list.
+
+
+Please alter the code so: it doesn't adjust the score 5*7 or 7*5. it changes 1*7, 6*8 and 7*9 to be 6*7 instead of 7*6. the score 7*62 is a special case and should become 7*6. And output the code created.
+
+
+Let's make some changes to the code for creating the cleaner2 versions. First off, it needs for MAIN_DIR to be MAIN_DIR = r"C:\Users\toddw\Desktop\Python Rating Code and Files\GenAI_Rewrite". Second, we need some rule modifications. For the rule fix_set3_bigs, it should only return 1*0 when a>b. If b>a, then it should return 0*1. For the fix_large_values rule, let's do that for values from 60-76 instead of just 60-69. And we need a rule 6: This rule is similar to fix_set3_bigs, but should apply to sets 1 and 2 instead. For those, if a>b and (a >= 10 or b>=10), then return 7*6. And if a<b and (a >= 10 or b>=10), then return 6*7. And we need a rule 7: For set scores 7*0, 7*1, 7*2, 7*3, 7*4, return 7*6. And for 0*7, 1*7, 2*7, 3*7, 4*7 return 6*7. Give me an updated version of that code.
+
+
+write an audit code that gives me a frequency of set1, set2 and set3 for the singles_cleaner2.csv file, and another report for set1, set2 and set3 of the doubles_cleaner2.csv file.
