@@ -1,0 +1,3 @@
+Results:
+TRS was correct on 86.2% of singles matches and 85.1% of doubles matches.  When incorrect, it was off by an average of 1.78 (skewed by one gap of 18 (player rated 0???) in singles and 1.68 in doubles.
+ChatGPT was correct on 80.4% of singles matches and 77.5% of double matches.  When incorrect, it was off by an average of 2.73 in singles and 2.49 in doubles.
