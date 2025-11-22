@@ -1,0 +1,45 @@
+I have two files called:
+SINGLES_OUT = MAIN_DIR + r"\singles_matches_clean.csv"
+DOUBLES_OUT = MAIN_DIR + r"\doubles_matches_clean.csv"
+
+I have a third file called district_state_tournament_match_ids.csv with a field called team_match_id. I need a piece of python code to remove records from the SINGLES_OUT and DOUBLES_OUT files where the team_match_id value is in the distrct_state_tournament_match_ids.csv file. It should write new csv files called Non_Tourney_Singles.csv and Non_Tourney_Doubles.csv
+
+
+
+Now do something similar, except this time keep only the records in district_state_tournament_match_ids.csv and name the files. Give me the full code.
+
+
+
+I want to do a thorough analysis of which of my two scoring methologies worked the best. I need a set of python code to do that. I have two csv files with player ratings from each of the two systems, and one dataset with singles matches played between winner1 and loser1.
+
+The main point of the analysis is which of the two systems predicts the winner of the match (winner1 has a rating higher than loser1).
+
+All 3 files are in: C:\Users\toddw\Desktop\Python Rating Code and Files\GenAI_Rewrite
+
+Independent data set 1: OSAA_Ratings_2025.csv has fields player (like player_id that maps to the winner1 and loser1 fields) and sing_rating (the players rating for singles).
+Independent data set 2: singles_player_ratings_pre_tourneys.csv has fields called playerID and rating, which serve the same purposes.
+Dependent data set: Tourney_Singles.csv has the fields winner1 and loser1 so you know who played against each other, with winner1 being the winner of the match.
+
+Give me a piece of code with good analysis of which independent data set has better ratings (predicts the winner more often).
+
+
+
+
+Alter the above code to output a csv file called comparison_results. That file should include all the data from the dependent file, plus the System A rating (rename as Todd_Rating), System B rating (rename as ChatGPT rating), a new field stating whether both systems were right, or "Only Todd was right" or "Only ChatGPT was right".
+
+
+
+write me a piece of code that analyzes the places where Todd and ChatGPT got things wrong. In other words, when we predicted the winner incorrectly, how far off were the ratings (e.g. player123 beat player 456 but Todd predicted player456 to win because player456's rating was 2.5 points higher. That is the gap I'm referring to.
+
+
+
+Now I want to do the same thing for doubles. Mimic what you've done but using the doubles files (as in 1) Figure out how often each independent file accuratly predicted the winner.
+
+For doubles, you can use the average ratings for winner1 and winner2 compared to the average ratings for loser1 and loser2.
+
+This time my files are:
+Independent data set 1: OSAA_Ratings_2025.csv. You can use player and doub_rating.
+Independent data set 2: doubles_player_ratings_pre_tourneys.csv has fields called playerID and rating, which serve the same purposes.
+Dependent data set: Tourney_Doubles.csv has the fields winner1/winner2 and loser1/loser2 so you know who played against each other, with winner1 being the winner of the match.
+
+I do still want the output for the comparison written to doubles_comparison.csv and then code that also compares how far off each method was when they were wrong (all similar to what you've recently provided)
